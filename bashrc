@@ -1,1 +1,4 @@
+if [ -f ~/.bash_profile ]; then
+	. ~/.bash_profile
+fi
 export PATH=$HOME/.rvm/bin:$PATH
