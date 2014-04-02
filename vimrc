@@ -21,7 +21,7 @@ filetype plugin indent on
 syntax enable
 set background=light
 set guifont=Menlo\ Regular:h17
-colorscheme solarized
+"colorscheme solarized
 
 set number
 set ruler
