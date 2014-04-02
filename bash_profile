@@ -1,6 +1,9 @@
 export CLICOLOR=1
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
+if [ -f /usr/local/Cellar/etc/bash_completion ]; then
+    . /usr/local/Cellar/etc/bash_completion
+fi
+if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
+    . /usr/share/git-core/contrib/completion/git-prompt.sh
 fi
 scm_ps1() {
     local s=
