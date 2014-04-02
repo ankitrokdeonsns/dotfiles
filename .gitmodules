@@ -24,5 +24,4 @@
     url = https://github.com/vim-scripts/groovy.vim.git
 [submodule "vim-json"]
     path = vim/bundle/vim-json
-    url = https://github.com/elzr/vim-json.git
-
+    url = https://github.com/leshill/vim-json.git
