@@ -1,27 +1,27 @@
-[submodule "ctrlp.vim"]
-    path = vim/bundle/ctrlp.vim
+[submodule "shared/vim/bundle/ctrlp.vim"]
+    path = shared/vim/bundle/ctrlp.vim
     url = https://github.com/kien/ctrlp.vim.git
-[submodule "nerdtree"]
-    path = vim/bundle/nerdtree
+[submodule "shared/vim/bundle/nerdtree"]
+    path = shared/vim/bundle/nerdtree
     url = https://github.com/scrooloose/nerdtree.git
-[submodule "supertab"]
-    path = vim/bundle/supertab
+[submodule "shared/vim/bundle/supertab"]
+    path = shared/vim/bundle/supertab
     url = https://github.com/ervandew/supertab.git
-[submodule "syntastic"]
-    path = vim/bundle/syntastic
+[submodule "shared/vim/bundle/syntastic"]
+    path = shared/vim/bundle/syntastic
     url = https://github.com/scrooloose/syntastic.git
-[submodule "vim-colors-solarized"]
-    path = vim/bundle/vim-colors-solarized
-    url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "vim-easymotion"]
-    path = vim/bundle/vim-easymotion
+[submodule "shared/vim/bundle/vim-colors-solarized"]
+	path = shared/vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "shared/vim/bundle/vim-easymotion"]
+    path = shared/vim/bundle/vim-easymotion
     url = https://github.com/Lokaltog/vim-easymotion.git
-[submodule "vundle"]
-    path = vim/bundle/vundle
+[submodule "shared/vim/bundle/vundle"]
+    path = shared/vim/bundle/vundle
     url = https://github.com/gmarik/vundle.git
-[submodule "groovy.vim"]
-    path = vim/bundle/groovy.vim
+[submodule "shared/vim/bundle/groovy.vim"]
+    path = shared/vim/bundle/groovy.vim
     url = https://github.com/vim-scripts/groovy.vim.git
-[submodule "vim/bundle/vim-json"]
-	path = vim/bundle/vim-json
-	url = git@github.com:leshill/vim-json.git
+[submodule "shared/vim/bundle/vim-json"]
+	path = shared/vim/bundle/vim-json
+	url = https://github.com/leshill/vim-json.git
