@@ -1,14 +1,12 @@
 #!/bin/bash
 
-OLD_DOTFILES_DIR=~/old_dotfiles
-mkdir -p $OLD_DOTFILES_DIR
-
-SHARED_FILES_DIR=~/dotfiles/shared
+OLD_DOTFILES_DIR=$HOME/old_dotfiles
+SHARED_FILES_DIR=$HOME/dotfiles/shared
 
 FILES=`ls -A $SHARED_FILES_DIR`
 
 for f in $FILES
 do
-    mv ~/.$f $OLD_DOTFILES_DIR
-    ln -s $SHARED_FILES_DIR/$f ~/.$f
+    mv $HOME/.$f $OLD_DOTFILES_DIR
+    ln -s $SHARED_FILES_DIR/$f $HOME/.$f
 done
