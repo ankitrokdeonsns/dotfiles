@@ -5,6 +5,13 @@ fi
 if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
     . /usr/share/git-core/contrib/completion/git-prompt.sh
 fi
+if [ -f /usr/local/opt/git/etc/bash_completion.d/git-completion.bash ]; then
+    . /usr/local/opt/git/etc/bash_completion.d/git-completion.bash
+fi
+if [ -f /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh ]; then
+    . /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh
+fi
+
 scm_ps1() {
     local s=
     if [[ -d ".svn" ]] ; then
