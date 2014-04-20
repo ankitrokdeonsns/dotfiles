@@ -25,3 +25,6 @@
 [submodule "shared/vim/bundle/vim-json"]
 	path = shared/vim/bundle/vim-json
 	url = https://github.com/leshill/vim-json.git
+[submodule "shared/vim/bundle/rails.vim"]
+	path = shared/vim/bundle/rails.vim
+	url = https://github.com/vim-scripts/rails.vim.git

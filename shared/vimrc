@@ -14,6 +14,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
 Plugin 'elzr/vim-json'
 Plugin 'groovy.vim'
+Plugin 'rails.vim'
 
 filetype plugin indent on
 "############# VUNDLE CONFIG END ##########
