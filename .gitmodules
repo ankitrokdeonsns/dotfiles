@@ -28,3 +28,6 @@
 [submodule "shared/vim/bundle/rails.vim"]
 	path = shared/vim/bundle/rails.vim
 	url = https://github.com/vim-scripts/rails.vim.git
+[submodule "shared/vim/bundle/vim-fugitive"]
+	path = shared/vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git

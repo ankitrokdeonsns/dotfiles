@@ -15,6 +15,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'elzr/vim-json'
 Plugin 'groovy.vim'
 Plugin 'rails.vim'
+Plugin 'tpope/vim-fugitive'
 
 filetype plugin indent on
 "############# VUNDLE CONFIG END ##########
@@ -35,6 +36,6 @@ nmap <BS> <<
 vmap <Tab> >gv
 vmap <BS> <gv
 
-au BufRead,BufNewFile Vagrantfile  set filetype=ruby
+au BufRead,BufNewFile Vagrantfile,RakeFile,*.rake  set filetype=ruby
 au BufRead,BufNewFile *.groovy  set filetype=groovy
 au BufRead,BufNewFile *.gradle set filetype=groovy
