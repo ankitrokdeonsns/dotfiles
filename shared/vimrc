@@ -46,3 +46,5 @@ au BufRead,BufNewFile *.gradle set filetype=groovy
 au BufRead,BufNewFile *.scss set ts=2 sts=2 sw=2
 au BufRead,BufNewFile *.coffee set ts=2 sts=2 sw=2
 au BufRead,BufNewFile *.haml set ts=2 sts=2 sw=2
+
+let g:auto_save = 1
