@@ -16,6 +16,7 @@ Plugin 'elzr/vim-json'
 Plugin 'groovy.vim'
 Plugin 'rails.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'kchmck/vim-coffee-script'
 
 filetype plugin indent on
 "############# VUNDLE CONFIG END ##########
@@ -39,3 +40,6 @@ vmap <BS> <gv
 au BufRead,BufNewFile Vagrantfile,RakeFile,*.rake  set filetype=ruby
 au BufRead,BufNewFile *.groovy  set filetype=groovy
 au BufRead,BufNewFile *.gradle set filetype=groovy
+au BufRead,BufNewFile *.scss set ts=2 sts=2 sw=2
+au BufRead,BufNewFile *.coffee set ts=2 sts=2 sw=2
+au BufRead,BufNewFile *.haml set ts=2 sts=2 sw=2
