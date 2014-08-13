@@ -19,6 +19,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'rking/ag.vim'
 Plugin 'vim-scripts/vim-auto-save'
+Plugin 'airblade/vim-gitgutter.git'
 
 filetype plugin indent on
 "############# VUNDLE CONFIG END ##########
