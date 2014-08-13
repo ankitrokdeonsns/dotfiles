@@ -37,3 +37,6 @@
 [submodule "shared/vim/bundle/ag.vim"]
 	path = shared/vim/bundle/ag.vim
 	url = https://github.com/rking/ag.vim.git
+[submodule "shared/vim/bundle/vim-auto-save"]
+	path = shared/vim/bundle/vim-auto-save
+	url = https://github.com/vim-scripts/vim-auto-save.git
