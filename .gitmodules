@@ -31,3 +31,6 @@
 [submodule "shared/vim/bundle/vim-fugitive"]
 	path = shared/vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "shared/vim/bundle/vim-coffee-script"]
+	path = shared/vim/bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
