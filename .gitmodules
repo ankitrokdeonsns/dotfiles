@@ -43,3 +43,9 @@
 [submodule "shared/vim/bundle/vim-gitgutter"]
 	path = shared/vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "shared/vim/bundle/vim-airline"]
+	path = shared/vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "shared/vim/bundle/YouCompleteMe"]
+	path = shared/vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
