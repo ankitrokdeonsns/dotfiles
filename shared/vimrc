@@ -20,6 +20,8 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'rking/ag.vim'
 Plugin 'vim-scripts/vim-auto-save'
 Plugin 'airblade/vim-gitgutter.git'
+"Plugin 'bling/vim-airline'
+Plugin 'Valloric/YouCompleteMe'
 
 filetype plugin indent on
 "############# VUNDLE CONFIG END ##########
@@ -40,6 +42,17 @@ nmap <BS> <<
 vmap <Tab> >gv
 vmap <BS> <gv
 
+let mapleader="\<Space>"
+nnoremap <Leader>o :CtrlP<CR>
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
+nmap <Leader>v V
+map q: :q
+
 au BufRead,BufNewFile Vagrantfile,RakeFile,*.rake  set filetype=ruby
 au BufRead,BufNewFile *.groovy  set filetype=groovy
 au BufRead,BufNewFile *.gradle set filetype=groovy
@@ -48,3 +61,8 @@ au BufRead,BufNewFile *.coffee set ts=2 sts=2 sw=2
 au BufRead,BufNewFile *.haml set ts=2 sts=2 sw=2
 
 let g:auto_save = 1
+
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
