@@ -49,3 +49,6 @@
 [submodule "shared/vim/bundle/YouCompleteMe"]
 	path = shared/vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "shared/vim/bundle/nerdcommenter"]
+	path = shared/vim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
