@@ -19,9 +19,9 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'rking/ag.vim'
 Plugin 'vim-scripts/vim-auto-save'
-Plugin 'airblade/vim-gitgutter.git'
+"Plugin 'airblade/vim-gitgutter.git'
 "Plugin 'bling/vim-airline'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 filetype plugin indent on
 "############# VUNDLE CONFIG END ##########
@@ -34,13 +34,24 @@ set guifont=Menlo\ Regular:h17
 set number
 set ruler
 set wildmenu
+set cursorline
+set autoindent
+set ttyfast
+set ignorecase
+set smartcase
+set incsearch
+set showmatch
+set hlsearch
 set laststatus=2
 set ts=4 sts=4 sw=4 expandtab
+set backspace=indent,eol,start
 
 nmap <Tab> >>
 nmap <BS> <<
 vmap <Tab> >gv
 vmap <BS> <gv
+nnoremap / /\v
+vnoremap / /\v
 
 let mapleader="\<Space>"
 nnoremap <Leader>o :CtrlP<CR>
@@ -51,7 +62,13 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 nmap <Leader>v V
+nnoremap <Leader><Space> :noh<CR>
+nnoremap ; :
 map q: :q
+" ==== NERD tree
+" Open the project tree and expose current file in the nerdtree with Ctrl-\
+nnoremap <silent> <Leader>nf :NERDTreeFind<CR>:vertical res 30<CR>
+nmap <Leader>nt :NERDTreeToggle<CR>
 
 au BufRead,BufNewFile Vagrantfile,RakeFile,*.rake  set filetype=ruby
 au BufRead,BufNewFile *.groovy  set filetype=groovy
@@ -64,5 +81,19 @@ let g:auto_save = 1
 
 set foldmethod=indent
 set foldnestmax=10
-set nofoldenable
+set foldenable
 set foldlevel=1
+
+" ================ Turn Off Swap Files ==============
+set noswapfile
+set nobackup
+set nowb
+
+" ================ Persistent Undo ==================
+" Keep undo history across sessions, by storing in file.
+" Only works all the time.
+if has('persistent_undo')
+    silent !mkdir ~/.vim/backups > /dev/null 2>&1
+    set undodir=~/.vim/backups
+    set undofile
+endif
