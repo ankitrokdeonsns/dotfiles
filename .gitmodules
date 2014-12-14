@@ -55,3 +55,6 @@
 [submodule "shared/vim/bundle/vim-bufferline"]
 	path = shared/vim/bundle/vim-bufferline
 	url = git@github.com:bling/vim-bufferline.git
+[submodule "shared/vim/bundle/bufexplorer.zip"]
+	path = shared/vim/bundle/bufexplorer.zip
+	url = git@github.com:vim-scripts/bufexplorer.zip.git

@@ -24,6 +24,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'bling/vim-airline'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'bling/vim-bufferline'
+Plugin 'vim-scripts/bufexplorer.zip'
 
 filetype plugin indent on
 "############# VUNDLE CONFIG END ##########
