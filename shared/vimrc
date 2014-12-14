@@ -38,7 +38,9 @@ endif
 set t_Co=256
 let g:airline_theme='bubblegum'
 let g:airline_powerline_fonts = 1
-highlight Search ctermbg=LightCyan
+highlight Search ctermbg=LightCyan guibg=LightCyan
+highlight ColorColumn ctermbg=LightGreen guibg=LightGreen
+call matchadd('ColorColumn', '\%81v', 100)
 
 set number
 set ruler
