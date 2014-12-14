@@ -23,6 +23,7 @@ Plugin 'scrooloose/nerdcommenter'
 "Plugin 'airblade/vim-gitgutter.git'
 Plugin 'bling/vim-airline'
 "Plugin 'Valloric/YouCompleteMe'
+Plugin 'bling/vim-bufferline'
 
 filetype plugin indent on
 "############# VUNDLE CONFIG END ##########
