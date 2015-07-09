@@ -25,7 +25,7 @@ scm_ps1() {
     fi
     echo -n "$s"
 }
-export PS1="\[\e[0;36m\]\w \$(scm_ps1) % \[\e[m\]"
+export PS1="\[\e[0;36m\]\w \$(scm_ps1) >>= \[\e[m\]"
 export LS_COLORS='di=34:fi=0:ln=32:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=31'
 unset SSH_ASKPASS
 
