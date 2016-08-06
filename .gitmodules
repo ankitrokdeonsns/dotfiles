@@ -1,60 +1,60 @@
 [submodule "shared/vim/bundle/ctrlp.vim"]
-    path = shared/vim/bundle/ctrlp.vim
-    url = https://github.com/kien/ctrlp.vim.git
+  path = shared/vim/bundle/ctrlp.vim
+  url = https://github.com/kien/ctrlp.vim.git
 [submodule "shared/vim/bundle/nerdtree"]
-    path = shared/vim/bundle/nerdtree
-    url = https://github.com/scrooloose/nerdtree.git
+  path = shared/vim/bundle/nerdtree
+  url = https://github.com/scrooloose/nerdtree.git
 [submodule "shared/vim/bundle/supertab"]
-    path = shared/vim/bundle/supertab
-    url = https://github.com/ervandew/supertab.git
+  path = shared/vim/bundle/supertab
+  url = https://github.com/ervandew/supertab.git
 [submodule "shared/vim/bundle/syntastic"]
-    path = shared/vim/bundle/syntastic
-    url = https://github.com/scrooloose/syntastic.git
+  path = shared/vim/bundle/syntastic
+  url = https://github.com/scrooloose/syntastic.git
 [submodule "shared/vim/bundle/vim-colors-solarized"]
-	path = shared/vim/bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
+  path = shared/vim/bundle/vim-colors-solarized
+  url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "shared/vim/bundle/vim-easymotion"]
-    path = shared/vim/bundle/vim-easymotion
-    url = https://github.com/Lokaltog/vim-easymotion.git
+  path = shared/vim/bundle/vim-easymotion
+  url = https://github.com/Lokaltog/vim-easymotion.git
 [submodule "shared/vim/bundle/vundle"]
-    path = shared/vim/bundle/vundle
-    url = https://github.com/gmarik/vundle.git
+  path = shared/vim/bundle/vundle
+  url = https://github.com/gmarik/vundle.git
 [submodule "shared/vim/bundle/groovy.vim"]
-    path = shared/vim/bundle/groovy.vim
-    url = https://github.com/vim-scripts/groovy.vim.git
+  path = shared/vim/bundle/groovy.vim
+  url = https://github.com/vim-scripts/groovy.vim.git
 [submodule "shared/vim/bundle/vim-json"]
-	path = shared/vim/bundle/vim-json
-	url = https://github.com/leshill/vim-json.git
+  path = shared/vim/bundle/vim-json
+  url = https://github.com/leshill/vim-json.git
 [submodule "shared/vim/bundle/rails.vim"]
-	path = shared/vim/bundle/rails.vim
-	url = https://github.com/vim-scripts/rails.vim.git
+  path = shared/vim/bundle/rails.vim
+  url = https://github.com/vim-scripts/rails.vim.git
 [submodule "shared/vim/bundle/vim-fugitive"]
-	path = shared/vim/bundle/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
+  path = shared/vim/bundle/vim-fugitive
+  url = https://github.com/tpope/vim-fugitive.git
 [submodule "shared/vim/bundle/vim-coffee-script"]
-	path = shared/vim/bundle/vim-coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
+  path = shared/vim/bundle/vim-coffee-script
+  url = https://github.com/kchmck/vim-coffee-script.git
 [submodule "shared/vim/bundle/ag.vim"]
-	path = shared/vim/bundle/ag.vim
-	url = https://github.com/rking/ag.vim.git
+  path = shared/vim/bundle/ag.vim
+  url = https://github.com/rking/ag.vim.git
 [submodule "shared/vim/bundle/vim-auto-save"]
-	path = shared/vim/bundle/vim-auto-save
-	url = https://github.com/vim-scripts/vim-auto-save.git
+  path = shared/vim/bundle/vim-auto-save
+  url = https://github.com/vim-scripts/vim-auto-save.git
 [submodule "shared/vim/bundle/vim-gitgutter"]
-	path = shared/vim/bundle/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter.git
+  path = shared/vim/bundle/vim-gitgutter
+  url = https://github.com/airblade/vim-gitgutter.git
 [submodule "shared/vim/bundle/vim-airline"]
-	path = shared/vim/bundle/vim-airline
-	url = https://github.com/bling/vim-airline.git
+  path = shared/vim/bundle/vim-airline
+  url = https://github.com/bling/vim-airline.git
 [submodule "shared/vim/bundle/YouCompleteMe"]
-	path = shared/vim/bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
+  path = shared/vim/bundle/YouCompleteMe
+  url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "shared/vim/bundle/nerdcommenter"]
-	path = shared/vim/bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
+  path = shared/vim/bundle/nerdcommenter
+  url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "shared/vim/bundle/vim-bufferline"]
-	path = shared/vim/bundle/vim-bufferline
-	url = git@github.com:bling/vim-bufferline.git
+  path = shared/vim/bundle/vim-bufferline
+  url = https://github.com/bling/vim-bufferline.git
 [submodule "shared/vim/bundle/bufexplorer.zip"]
-	path = shared/vim/bundle/bufexplorer.zip
-	url = git@github.com:vim-scripts/bufexplorer.zip.git
+  path = shared/vim/bundle/bufexplorer.zip
+  url = https://github.com/vim-scripts/bufexplorer.zip.git
