@@ -11,6 +11,12 @@ fi
 if [ -f /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh ]; then
     . /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh
 fi
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
+if [ -f /etc/bash_completion.d/git-prompt ]; then
+    . /etc/bash_completion.d/git-prompt
+fi
 
 if [ -f "$HOME/aliases" ]; then
     . "$HOME/aliases"
@@ -34,3 +40,4 @@ if [[ $OS != "Darwin" ]]; then
     alias ls="ls --color"
 fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export PATH=$PATH:/home/ankit/bin
