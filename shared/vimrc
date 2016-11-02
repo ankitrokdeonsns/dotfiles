@@ -32,7 +32,7 @@ filetype plugin indent on
 
 syntax enable
 set background=light
-set guifont=Anonymice\ Powerline:h19
+set guifont=Anonymous\ Pro\ for\ Powerline\ 14
 if has('gui_running')
     colorscheme solarized
 endif
@@ -73,7 +73,7 @@ set autoread
 set hidden
 set nopaste "supertab wont work if paste is set, enable only when required
 
-set list
+"set list
 set listchars=trail:.,
 
 nmap <Tab> >>

@@ -31,7 +31,7 @@ scm_ps1() {
     fi
     echo -n "$s"
 }
-export PS1="\[\e[0;36m\]\w \$(scm_ps1) >>= \[\e[m\]"
+export PS1="\[\e[0;36m\]\h :: \w \$(scm_ps1) >>= \[\e[m\]"
 export LS_COLORS='di=34:fi=0:ln=32:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=31'
 unset SSH_ASKPASS
 
@@ -40,4 +40,5 @@ if [[ $OS != "Darwin" ]]; then
     alias ls="ls --color"
 fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-export PATH=$PATH:/home/ankit/bin
+export PATH=$PATH:/home/ankit/bin:$HOME/.cabal/bin
+export JAVA_HOME=/usr/java/latest
