@@ -34,7 +34,7 @@ syntax enable
 set background=light
 set guifont=Anonymous\ Pro\ for\ Powerline\ 14
 if has('gui_running')
-    colorscheme solarized
+    colorscheme nuvola
 endif
 set t_Co=256
 
