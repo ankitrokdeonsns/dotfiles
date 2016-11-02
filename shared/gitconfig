@@ -1,0 +1,16 @@
+[user]
+	name = ankit rokde
+	email = ankitrokdeonsns@gmail.com
+[color]
+	ui = true
+[core]
+	editor = /usr/bin/vim
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+	pl = pull
+	poo = push
+[push]
+	default = simple
