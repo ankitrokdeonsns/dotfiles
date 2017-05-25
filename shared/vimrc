@@ -9,40 +9,67 @@ Plugin 'gmarik/vundle'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'ervandew/supertab'
-"Plugin 'Lokaltog/vim-easymotion'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
-Plugin 'elzr/vim-json'
-Plugin 'groovy.vim'
-Plugin 'rails.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'kchmck/vim-coffee-script'
+"Plugin 'tpope/vim-fugitive'
 Plugin 'rking/ag.vim'
 Plugin 'vim-scripts/vim-auto-save'
-
-Plugin 'scrooloose/nerdcommenter'
-"Plugin 'airblade/vim-gitgutter.git'
 Plugin 'bling/vim-airline'
+Plugin 'vim-scripts/bufexplorer.zip'
+Plugin 'eagletmt/ghcmod-vim'
+Plugin 'eagletmt/neco-ghc'
+Plugin 'Shuogo/vimproc.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'xolox/vim-colorscheme-switcher'
+Plugin 'xolox/vim-misc'
+
+"Plugin 'panagosg7/vim-annotations'
+"Plugin 'Lokaltog/vim-easymotion'
+"Plugin 'elzr/vim-json'
+"Plugin 'groovy.vim'
+"Plugin 'rails.vim'
+"Plugin 'kchmck/vim-coffee-script'
+"Plugin 'scrooloose/nerdcommenter'
+"Plugin 'airblade/vim-gitgutter.git'
 "Plugin 'Valloric/YouCompleteMe'
 "Plugin 'bling/vim-bufferline'
-Plugin 'vim-scripts/bufexplorer.zip'
+"Plugin 'panozzaj/vim-autocorrect'
 
 filetype plugin indent on
 "############# VUNDLE CONFIG END ##########
 
 syntax enable
 set background=light
-set guifont=Anonymous\ Pro\ for\ Powerline\ 14
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 12
+"set guifont=Inconsolata-dz\ for\ Powerline\ 14
 if has('gui_running')
+    "colorscheme desert
     colorscheme nuvola
+    "colorscheme abbott
+    "colorscheme asu1dark
+    "colorscheme atom
+    "colorscheme babymate256
+    "colorscheme badwolf
+    "colorscheme desertink
+    "colorscheme detailed
+    "colorscheme earendel
+    "colorscheme getafe
+    "colorscheme hybrid_material
+    "colorscheme literal_tango
+    "colorscheme Tomorrow-Night
+    "colorscheme xoria256
+    "colorscheme zmrok
+    "colorscheme znake
 endif
 set t_Co=256
 
 let g:airline_theme='bubblegum'
 let g:airline_powerline_fonts = 1
-highlight Search ctermbg=LightCyan guibg=LightCyan
-highlight ColorColumn ctermbg=LightGreen guibg=LightGreen
-call matchadd('ColorColumn', '\%81v', 100)
+highlight Search ctermbg=Red guibg=Red
+highlight ColorColumn ctermbg=DarkRed guibg=DarkRed
+call matchadd('ColorColumn', '\%85v', 100)
 
 set number
 set ruler
@@ -75,6 +102,8 @@ set nopaste "supertab wont work if paste is set, enable only when required
 
 "set list
 set listchars=trail:.,
+"set spell
+set spelllang=en_us
 
 nmap <Tab> >>
 nmap <BS> <<
@@ -108,6 +137,9 @@ au BufRead,BufNewFile *.coffee set ts=2 sts=2 sw=2
 au BufRead,BufNewFile *.haml set ts=2 sts=2 sw=2
 
 let g:auto_save = 1
+let g:vim_annotations_offset = '/.liquid/'
+let g:syntastic_mode_map = { 'mode': 'active' }
+let g:syntastic_haskell_checkers = ['hdevtools', 'hlint', 'liquid']
 
 set foldmethod=indent
 set foldnestmax=10
@@ -127,3 +159,32 @@ if has('persistent_undo')
     set undodir=~/.vim/backups
     set undofile
 endif
+
+" ================ syntastic =================
+map <Leader>s :SyntasticToggleMode<CR>
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+
+" =============== ghc-mod ===================
+map <silent> tw :GhcModTypeInsert<CR>
+map <silent> ts :GhcModSplitFunCase<CR>
+map <silent> tq :GhcModType<CR>
+map <silent> te :GhcModTypeClear<CR>
+
+" =============== tabularize ================
+let g:haskell_tabular = 1
+
+vmap a= :Tabularize /=<CR>
+vmap a; :Tabularize /::<CR>
+vmap a- :Tabularize /-><CR>
+"vmap a\ :Tabularize /|<CR>
+
+" =============== supertab ==================
+

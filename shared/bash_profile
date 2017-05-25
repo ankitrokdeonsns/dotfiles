@@ -1,4 +1,5 @@
 export CLICOLOR=1
+#terminal colorscheme base16-isotope font droid sans mono for powerline
 if [ -f /usr/local/Cellar/etc/bash_completion ]; then
     . /usr/local/Cellar/etc/bash_completion
 fi
@@ -17,6 +18,9 @@ fi
 if [ -f /etc/bash_completion.d/git-prompt ]; then
     . /etc/bash_completion.d/git-prompt
 fi
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+  . /usr/share/bash-completion/bash_completion
+fi
 
 if [ -f "$HOME/aliases" ]; then
     . "$HOME/aliases"
@@ -31,14 +35,26 @@ scm_ps1() {
     fi
     echo -n "$s"
 }
-export PS1="\[\e[0;36m\]\h :: \w \$(scm_ps1) >>= \[\e[m\]"
+#export PS1="\[\e[0;31m\]\w \$(scm_ps1) % \[\e[m\]"
+#export PS1=$'\[\e[0;31m\]\w '"\$(scm_ps1)"$' \u03bb \u276f \[\e[m\]'
+export PS1=$'\[\e[0;31m\]\w '"\$(scm_ps1)"$' \u03bb \[\e[m\]'
 export LS_COLORS='di=34:fi=0:ln=32:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=31'
 unset SSH_ASKPASS
 
 OS=`uname`
-if [[ $OS != "Darwin" ]]; then
-    alias ls="ls --color"
-fi
+#if [[ $OS != "Darwin" ]]; then
+#    alias ls="ls --color"
+#fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 export PATH=$PATH:/home/ankit/bin:$HOME/.cabal/bin
 export JAVA_HOME=/usr/java/latest
+export PATH=$PATH:/opt/android/android-sdk/bin
+export PATH=$PATH:/home/ankit/Android/Sdk/tools
+export PATH=$PATH:/home/ankit/Android/Sdk/platform-tools
+export PATH=$PATH:/home/ankit/Android/Sdk/build-tools
+export CATALINA_HOME=/opt/tomcat/apache-tomcat-8.0.35
+export PATH=$PATH:$CATALINA_HOME/bin
+export TERM=xterm
+# added by Anaconda3 4.3.0 installer
+export PATH="/home/ankit/packages/anaconda3/bin:$PATH"
+export PATH=/home/ankit/.local/bin:$PATH

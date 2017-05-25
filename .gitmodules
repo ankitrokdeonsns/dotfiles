@@ -53,8 +53,38 @@
   path = shared/vim/bundle/nerdcommenter
   url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "shared/vim/bundle/vim-bufferline"]
-  path = shared/vim/bundle/vim-bufferline
-  url = https://github.com/bling/vim-bufferline.git
+	path = shared/vim/bundle/vim-bufferline
+	url = https://github.com/bling/vim-bufferline.git
 [submodule "shared/vim/bundle/bufexplorer.zip"]
-  path = shared/vim/bundle/bufexplorer.zip
-  url = https://github.com/vim-scripts/bufexplorer.zip.git
+	path = shared/vim/bundle/bufexplorer.zip
+	url = https://github.com/vim-scripts/bufexplorer.zip.git
+[submodule "shared/vim/bundle/vim-autocorrect"]
+	path = shared/vim/bundle/vim-autocorrect
+	url = https://github.com/panozzaj/vim-autocorrect.git
+[submodule "shared/vim/bundle/vim-annotations"]
+	path = shared/vim/bundle/vim-annotations
+	url = https://github.com/panagosg7/vim-annotations
+[submodule "shared/vim/bundle/ghcmod-vim"]
+	path = shared/vim/bundle/ghcmod-vim
+	url = https://github.com/eagletmt/ghcmod-vim.git
+[submodule "shared/vim/bundle/vimproc.vim"]
+	path = shared/vim/bundle/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim.git
+[submodule "shared/vim/bundle/tabular"]
+	path = shared/vim/bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "shared/vim/bundle/neco-ghc"]
+	path = shared/vim/bundle/neco-ghc
+	url = https://github.com/eagletmt/neco-ghc
+[submodule "shared/vim/bundle/vim-surround"]
+	path = shared/vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "shared/vim/bundle/vim-repeat"]
+	path = shared/vim/bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat
+[submodule "shared/vim/bundle/vim-colorscheme-switcher"]
+	path = shared/vim/bundle/vim-colorscheme-switcher
+	url = https://github.com/xolox/vim-colorscheme-switcher.git
+[submodule "shared/vim/bundle/vim-misc"]
+	path = shared/vim/bundle/vim-misc
+	url = https://github.com/xolox/vim-misc.git

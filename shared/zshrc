@@ -1,2 +1,6 @@
+autoload -Uz compinit promptinit
+compinit
+promptinit
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# This will set the default prompt to the walters theme
+prompt walters
