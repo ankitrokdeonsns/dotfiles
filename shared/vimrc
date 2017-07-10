@@ -45,8 +45,9 @@ set background=light
 set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 12
 "set guifont=Inconsolata-dz\ for\ Powerline\ 14
 if has('gui_running')
-    "colorscheme desert
+    "colorscheme znake
     colorscheme nuvola
+    "colorscheme desert
     "colorscheme abbott
     "colorscheme asu1dark
     "colorscheme atom
@@ -61,7 +62,6 @@ if has('gui_running')
     "colorscheme Tomorrow-Night
     "colorscheme xoria256
     "colorscheme zmrok
-    "colorscheme znake
 endif
 set t_Co=256
 
@@ -121,6 +121,14 @@ nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
 nmap <Leader>v V
+
+nmap <Leader>h <C-w><C-h>
+nmap <Leader>j <C-w><C-j>
+nmap <Leader>k <C-w><C-k>
+nmap <Leader>l <C-w><C-l>
+nmap <Leader>l <C-w><C-l>
+nmap <Leader>t <C-w><C-t>
+
 nnoremap <Leader><Space> :noh<CR>
 nnoremap ; :
 map q: :q
