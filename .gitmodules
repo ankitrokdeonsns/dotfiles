@@ -88,12 +88,9 @@
 [submodule "shared/vim/bundle/vim-misc"]
 	path = shared/vim/bundle/vim-misc
 	url = https://github.com/xolox/vim-misc.git
-[submodule "shared/vim/vim-colorschemes"]
-	path = shared/vim/vim-colorschemes
+[submodule "shared/vim/bundle/vim-colorschemes"]
+	path = shared/vim/bundle/vim-colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
 [submodule "shared/vim/bundle/vim-instant-markdown"]
 	path = shared/vim/bundle/vim-instant-markdown
 	url = https://github.com/suan/vim-instant-markdown.git
-[submodule "shared/vim/bundle/vim-colorschemes"]
-	path = shared/vim/bundle/vim-colorschemes
-	url = https://github.com/flazz/vim-colorschemes.git

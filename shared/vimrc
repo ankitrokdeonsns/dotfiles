@@ -24,6 +24,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'xolox/vim-colorscheme-switcher'
 Plugin 'xolox/vim-misc'
+Plugin 'suan/vim-instant-markdown'
 
 "Plugin 'panagosg7/vim-annotations'
 "Plugin 'Lokaltog/vim-easymotion'
@@ -45,23 +46,23 @@ set background=light
 set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 12
 "set guifont=Inconsolata-dz\ for\ Powerline\ 14
 if has('gui_running')
-    "colorscheme znake
-    colorscheme nuvola
-    "colorscheme desert
-    "colorscheme abbott
-    "colorscheme asu1dark
-    "colorscheme atom
-    "colorscheme babymate256
-    "colorscheme badwolf
-    "colorscheme desertink
-    "colorscheme detailed
-    "colorscheme earendel
-    "colorscheme getafe
-    "colorscheme hybrid_material
-    "colorscheme literal_tango
-    "colorscheme Tomorrow-Night
-    "colorscheme xoria256
-    "colorscheme zmrok
+  "colorscheme znake
+  colorscheme nuvola
+  "colorscheme desert
+  "colorscheme abbott
+  "colorscheme asu1dark
+  "colorscheme atom
+  "colorscheme babymate256
+  "colorscheme badwolf
+  "colorscheme desertink
+  "colorscheme detailed
+  "colorscheme earendel
+  "colorscheme getafe
+  "colorscheme hybrid_material
+  "colorscheme literal_tango
+  "colorscheme Tomorrow-Night
+  "colorscheme xoria256
+  "colorscheme zmrok
 endif
 set t_Co=256
 
@@ -163,9 +164,9 @@ set nowb
 " Keep undo history across sessions, by storing in file.
 " Only works all the time.
 if has('persistent_undo')
-    silent !mkdir ~/.vim/backups > /dev/null 2>&1
-    set undodir=~/.vim/backups
-    set undofile
+  silent !mkdir ~/.vim/backups > /dev/null 2>&1
+  set undodir=~/.vim/backups
+  set undofile
 endif
 
 " ================ syntastic =================
@@ -195,4 +196,17 @@ vmap a- :Tabularize /-><CR>
 "vmap a\ :Tabularize /|<CR>
 
 " =============== supertab ==================
+
+" =============== vim-instant-markdown ==================
+"let g:instant_markdown_slow = 1
+"let g:instant_markdown_autostart = 0
+"let g:instant_markdown_open_to_the_world = 1
+"let g:instant_markdown_allow_unsafe_content = 1
+"let g:instant_markdown_allow_external_content = 0
+let g:instant_markdown_mathjax = 1
+"let g:instant_markdown_logfile = '/tmp/instant_markdown.log'
+"let g:instant_markdown_autoscroll = 0
+let g:instant_markdown_port = 8888
+let g:instant_markdown_python = 1
+
 
